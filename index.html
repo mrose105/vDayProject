@@ -15,28 +15,52 @@
 <p class="p1">&lt;!DOCTYPE html&gt;</p>
 <p class="p1">&lt;html lang="en"&gt;</p>
 <p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Be My Valentine!&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body { font-family: sans-serif; text-align: center; padding-top: 50px; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>button { margin: 20px; padding: 10px 20px; font-size: 16px; }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;title&gt;Be My Valentine!&lt;/title&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">body {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding-top: 100px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: #ffe6f0;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">h1 {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 40px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">button {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 15px 30px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>cursor: pointer;</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/style&gt;</p>
 <p class="p1">&lt;/head&gt;</p>
 <p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Will you be my Valentine?&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;button id="yes"&gt;Yes!&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;button id="no"&gt;No&lt;/button&gt;</p>
 <p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const noButton = document.getElementById('no');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>noButton.addEventListener('mouseover', () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const x = Math.random() * (window.innerWidth - noButton.offsetWidth);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const y = Math.random() * (window.innerHeight - noButton.offsetHeight);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>noButton.style.position = 'absolute';</p>
-<p class="p1"><span class="Apple-converted-space">            </span>noButton.style.left = `${x}px`;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>noButton.style.top = `${y}px`;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;h1&gt;Will you be my Valentine? ❤️&lt;/h1&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;button id="yes"&gt;Yes!&lt;/button&gt;</p>
+<p class="p1">&lt;button id="no"&gt;No&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">const noButton = document.getElementById('no');</p>
+<p class="p2"><br></p>
+<p class="p1">noButton.addEventListener('mouseover', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const x = Math.random() * (window.innerWidth - noButton.offsetWidth);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const y = Math.random() * (window.innerHeight - noButton.offsetHeight);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>noButton.style.position = 'absolute';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>noButton.style.left = `${x}px`;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>noButton.style.top = `${y}px`;</p>
+<p class="p1">});</p>
+<p class="p2"><br></p>
+<p class="p1">document.getElementById('yes').addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.body.innerHTML = "&lt;h1&gt;YAYYY ❤️ I knew you'd say yes 😌&lt;/h1&gt;";</p>
+<p class="p1">});</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
 <p class="p1">&lt;/body&gt;</p>
 <p class="p1">&lt;/html&gt;</p>
 </body>
