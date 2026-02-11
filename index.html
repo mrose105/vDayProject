@@ -15,136 +15,139 @@
 <p class="p1">&lt;!DOCTYPE html&gt;</p>
 <p class="p1">&lt;html lang="en"&gt;</p>
 <p class="p1">&lt;head&gt;</p>
-<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1">&lt;title&gt;Be My Valentine!&lt;/title&gt;</p>
-<p class="p1">&lt;style&gt;</p>
-<p class="p1">body {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-family: sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding-top: 100px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background: #ffe6f0;</p>
-<p class="p1">}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Be My Valentine!&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding-top: 100px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #ffe6f0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
 <p class="p2"><br></p>
-<p class="p1">h1 {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size: 40px;</p>
-<p class="p1">}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>h1 { font-size: 40px; }</p>
 <p class="p2"><br></p>
-<p class="p1">button {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 15px 30px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size: 18px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>cursor: pointer;</p>
-<p class="p1">}</p>
-<p class="p1">.heart {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>position: fixed;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>bottom: -20px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>font-size: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>opacity: 0.8;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>animation: floatUp 4s linear forwards;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>pointer-events: none;</p>
-<p class="p1">}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>button {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 15px 30px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
 <p class="p2"><br></p>
-<p class="p1">@keyframes floatUp {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>to {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>transform: translateY(-110vh);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>opacity: 0;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}</p>
-<p class="p1">}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>#yes { background: #ffffff; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>#no<span class="Apple-converted-space">  </span>{ background: #ffd1e1; }</p>
 <p class="p2"><br></p>
-<p class="p1">&lt;/style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.heart {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: fixed;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>bottom: -20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>opacity: 0.8;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>animation: floatUp 4s linear forwards;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>pointer-events: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes floatUp {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>to { transform: translateY(-110vh); opacity: 0; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
 <p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
 <p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h1&gt;Courtney, will you be my Valentine? ❤️&lt;/h1&gt;</p>
 <p class="p2"><br></p>
-<p class="p1">&lt;h1&gt;Courtney, will you be my Valentine? ❤️&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;button id="yes"&gt;Yes!&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;button id="no"&gt;No&lt;/button&gt;</p>
 <p class="p2"><br></p>
-<p class="p1">&lt;button id="yes"&gt;Yes!&lt;/button&gt;</p>
-<p class="p1">&lt;button id="no"&gt;No&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const noButton = document.getElementById('no');</p>
 <p class="p2"><br></p>
-<p class="p1">&lt;script&gt;</p>
-<p class="p1">const noButton = document.getElementById('no');</p>
-<p class="p2"><br></p>
-<p class="p1">function confettiBurst(durationMs = 1200) {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const canvas = document.createElement('canvas');</p>
-<p class="p1"><span class="Apple-converted-space">  </span>canvas.style.position = 'fixed';</p>
-<p class="p1"><span class="Apple-converted-space">  </span>canvas.style.inset = '0';</p>
-<p class="p1"><span class="Apple-converted-space">  </span>canvas.style.pointerEvents = 'none';</p>
-<p class="p1"><span class="Apple-converted-space">  </span>document.body.appendChild(canvas);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>const ctx = canvas.getContext('2d');</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const dpr = window.devicePixelRatio || 1;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>function resize() {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>canvas.width = Math.floor(window.innerWidth * dpr);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>canvas.height = Math.floor(window.innerHeight * dpr);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>resize();</p>
-<p class="p1"><span class="Apple-converted-space">  </span>window.addEventListener('resize', resize);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>const pieces = Array.from({ length: 180 }, () =&gt; ({</p>
-<p class="p1"><span class="Apple-converted-space">    </span>x: Math.random() * canvas.width,</p>
-<p class="p1"><span class="Apple-converted-space">    </span>y: -Math.random() * canvas.height * 0.2,</p>
-<p class="p1"><span class="Apple-converted-space">    </span>vx: (Math.random() - 0.5) * 6 * dpr,</p>
-<p class="p1"><span class="Apple-converted-space">    </span>vy: (Math.random() * 6 + 3) * dpr,</p>
-<p class="p1"><span class="Apple-converted-space">    </span>r: (Math.random() * 6 + 3) * dpr,</p>
-<p class="p1"><span class="Apple-converted-space">    </span>rot: Math.random() * Math.PI,</p>
-<p class="p1"><span class="Apple-converted-space">    </span>vr: (Math.random() - 0.5) * 0.2</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}));</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>const start = performance.now();</p>
-<p class="p1"><span class="Apple-converted-space">  </span>(function tick(t) {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>ctx.clearRect(0, 0, canvas.width, canvas.height);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>for (const p of pieces) {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>p.x += p.vx;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>p.y += p.vy;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>p.vy += 0.05 * dpr; // gravity</p>
-<p class="p1"><span class="Apple-converted-space">      </span>p.rot += p.vr;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>ctx.save();</p>
-<p class="p1"><span class="Apple-converted-space">      </span>ctx.translate(p.x, p.y);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>ctx.rotate(p.rot);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>ctx.fillRect(-p.r / 2, -p.r / 2, p.r, p.r);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>ctx.restore();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>function dodgeNo() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const x = Math.random() * (window.innerWidth - noButton.offsetWidth);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const y = Math.random() * (window.innerHeight - noButton.offsetHeight);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>noButton.style.position = 'absolute';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>noButton.style.left = `${x}px`;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>noButton.style.top<span class="Apple-converted-space">  </span>= `${y}px`;</p>
 <p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>if (t - start &lt; durationMs) requestAnimationFrame(tick);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>else {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>window.removeEventListener('resize', resize);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>canvas.remove();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// No button dodges on hover (desktop) + tap (mobile)</p>
+<p class="p1"><span class="Apple-converted-space">    </span>noButton.addEventListener('mouseover', dodgeNo);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>noButton.addEventListener('click', (e) =&gt; { e.preventDefault(); dodgeNo(); });</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function confettiBurst(durationMs = 1200) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const canvas = document.createElement('canvas');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>canvas.style.position = 'fixed';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>canvas.style.inset = '0';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>canvas.style.pointerEvents = 'none';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.body.appendChild(canvas);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const ctx = canvas.getContext('2d');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const dpr = window.devicePixelRatio || 1;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>function resize() {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>canvas.width = Math.floor(window.innerWidth * dpr);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>canvas.height = Math.floor(window.innerHeight * dpr);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>resize();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>window.addEventListener('resize', resize);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const pieces = Array.from({ length: 180 }, () =&gt; ({</p>
+<p class="p1"><span class="Apple-converted-space">        </span>x: Math.random() * canvas.width,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>y: -Math.random() * canvas.height * 0.2,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>vx: (Math.random() - 0.5) * 6 * dpr,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>vy: (Math.random() * 6 + 3) * dpr,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>r: (Math.random() * 6 + 3) * dpr,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>rot: Math.random() * Math.PI,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>vr: (Math.random() - 0.5) * 0.2</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}));</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const start = performance.now();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>(function tick(t) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>ctx.clearRect(0, 0, canvas.width, canvas.height);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>for (const p of pieces) {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>p.x += p.vx;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>p.y += p.vy;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>p.vy += 0.05 * dpr; // gravity</p>
+<p class="p1"><span class="Apple-converted-space">          </span>p.rot += p.vr;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>ctx.save();</p>
+<p class="p1"><span class="Apple-converted-space">          </span>ctx.translate(p.x, p.y);</p>
+<p class="p1"><span class="Apple-converted-space">          </span>ctx.rotate(p.rot);</p>
+<p class="p1"><span class="Apple-converted-space">          </span>ctx.fillRect(-p.r/2, -p.r/2, p.r, p.r);</p>
+<p class="p1"><span class="Apple-converted-space">          </span>ctx.restore();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (t - start &lt; durationMs) requestAnimationFrame(tick);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>else {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>window.removeEventListener('resize', resize);</p>
+<p class="p1"><span class="Apple-converted-space">          </span>canvas.remove();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>})(start);</p>
 <p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>})(start);</p>
-<p class="p1">}</p>
 <p class="p2"><br></p>
-<p class="p1">noButton.addEventListener('mouseover', () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const x = Math.random() * (window.innerWidth - noButton.offsetWidth);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const y = Math.random() * (window.innerHeight - noButton.offsetHeight);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>function startHearts() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>setInterval(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const h = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h.className = 'heart';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h.textContent = '❤️';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h.style.left = Math.random() * 100 + 'vw';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h.style.fontSize = (Math.random() * 18 + 14) + 'px';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h.style.animationDuration = (Math.random() * 2 + 3) + 's';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.body.appendChild(h);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>setTimeout(() =&gt; h.remove(), 5000);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}, 250);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>startHearts();</p>
 <p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>noButton.style.position = 'absolute';</p>
-<p class="p1"><span class="Apple-converted-space">    </span>noButton.style.left = `${x}px`;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>noButton.style.top = `${y}px`;</p>
-<p class="p1">});</p>
-<p class="p2"><br></p>
-<p class="p1">document.getElementById('yes').addEventListener('click', () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>confettiBurst();</p>
-<p class="p1"><span class="Apple-converted-space">  </span>document.body.innerHTML = "&lt;h1&gt;YAYYY ❤️ I knew you'd say yes 😌&lt;/h1&gt;";</p>
-<p class="p1">});</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">function startHearts() {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>setInterval(() =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const h = document.createElement('div');</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h.className = 'heart';</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h.textContent = '❤️';</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h.style.left = Math.random() * 100 + 'vw';</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h.style.fontSize = (Math.random() * 18 + 14) + 'px';</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h.style.animationDuration = (Math.random() * 2 + 3) + 's';</p>
-<p class="p1"><span class="Apple-converted-space">    </span>document.body.appendChild(h);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>setTimeout(() =&gt; h.remove(), 5000);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}, 250);</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">startHearts();</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/script&gt;</p>
-<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('yes').addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>confettiBurst();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>setTimeout(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.body.innerHTML = "&lt;h1&gt;YAYYY ❤️ I knew you'd say yes 😌&lt;/h1&gt;";</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}, 600);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
 <p class="p1">&lt;/body&gt;</p>
 <p class="p1">&lt;/html&gt;</p>
 </body>
